@@ -17,11 +17,11 @@ Python 3.6+
 
 ## Try it
 1. Send photos for swapping. Make `POST` request on `/upload_image` with form-data files: `source, target`. Copy `id` from response.
-![](https://freeimage.host/i/21bnX2)
+![](https://iili.io/21bnX2.png)
 2. Get swapping results. Make `GET` request to `/result/$id/`. 
-![](https://freeimage.host/i/21bCzl)
+![](https://iili.io/21bCzl.png)
 3. Check `result_url`
-![](https://freeimage.host/i/21bosS)
+![](https://iili.io/21bosS.png)
 
 ### Deployment notes and todos:
 - Add highload testing with [locust.io](https://locust.io/)
