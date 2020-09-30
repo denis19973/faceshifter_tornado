@@ -20,7 +20,7 @@ Python 3.6+
 ![](https://iili.io/21bnX2.png)
 2. Get swapping results. Make `GET` request to `/result/$id/`. 
 ![](https://iili.io/21bCzl.png)
-3. Check `result_url`
+3. Check `result_url`.
 ![](https://iili.io/21bosS.png)
 
 ### Deployment notes and todos:
