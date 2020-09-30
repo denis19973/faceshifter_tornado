@@ -8,7 +8,7 @@ Python 3.6+
 1. Install MongoDB [Guide](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/)
 2. Create mongo database with name `faceshifter`: in shell run `mongo` and then `use faceshifter;`
 2. `cd faceshifter_tornado/`
-3. `python3 -m venv ENV/`
+3. `python3 -m venv ENV/` and `source ENV/bin/activate`
 4. `pip install -r requirements.txt`
 5. Download weights for AEI generator [google drive link](https://drive.google.com/file/d/1z1htsPJi-hfTcD8akOO3xJNFy9jYccGc/view?usp=sharing)
 6. Extract weights  `tar -xvf faceshifter_weights.tar -C faceshifter/model_weights/`
@@ -17,8 +17,11 @@ Python 3.6+
 
 ## Try it
 1. Send photos for swapping. Make `POST` request on `/upload_image` with form-data files: `source, target`. Copy `id` from response.
+![](https://freeimage.host/i/21bnX2)
 2. Get swapping results. Make `GET` request to `/result/$id/`. 
+![](https://freeimage.host/i/21bCzl)
 3. Check `result_url`
+![](https://freeimage.host/i/21bosS)
 
 ### Deployment notes and todos:
 - Add highload testing with [locust.io](https://locust.io/)
